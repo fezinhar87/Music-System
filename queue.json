@@ -1,0 +1,50 @@
+{
+  "name": "queue",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "fTMlp",
+  "actions": [
+    {
+      "server": "0",
+      "info": "3",
+      "storage": "1",
+      "varName": "liudt",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "server": "0",
+      "info": "5",
+      "storage": "1",
+      "varName": "eng",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "title": "There are ${tempVars(\"eng\")} songs in the queue",
+      "author": "",
+      "color": "RANDOM",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "em",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "em",
+      "message": "${tempVars(\"liudt\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "em",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
