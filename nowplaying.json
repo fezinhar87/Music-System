@@ -1,0 +1,64 @@
+{
+  "name": "nowplaying",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "RgOvX",
+  "actions": [
+    {
+      "server": "0",
+      "info": "9",
+      "storage": "1",
+      "varName": "curt",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "video": "${tempVars(\"curt\")}",
+      "info": "2",
+      "storage": "1",
+      "varName": "title",
+      "name": "Store YouTube Info"
+    },
+    {
+      "video": "${tempVars(\"curt\")}",
+      "info": "4",
+      "storage": "1",
+      "varName": "auth",
+      "name": "Store YouTube Info"
+    },
+    {
+      "server": "0",
+      "info": "8",
+      "storage": "1",
+      "varName": "pos",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "title": "${tempVars(\"title\")}",
+      "author": "",
+      "color": "RANDOM",
+      "timestamp": "false",
+      "url": "${tempVars(\"curt\")}",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "e",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "e",
+      "message": "Author: ${tempVars(\"auth\")}\nSeek Position: ${tempVars(\"pos\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "e",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
