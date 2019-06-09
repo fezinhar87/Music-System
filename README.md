@@ -13,3 +13,5 @@ Queue
 Clearqueue
 Nowplaying
 and more to come
+
+To make it work you need a api key Tutorial:  https://youtu.be/4hQ0jguPxcs  Then paste that api key into the play command in action 11,12 and 13
